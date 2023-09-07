@@ -24,6 +24,7 @@ if __name__ == "__main__":
         print(helpMessage)
         exit(1)
     elif sys.argv[1].isnumeric():
+        print(f"Transpose {sys.argv[1]} steps:")
         transposeTable(sys.argv[1])
         exit(0)
     else:
