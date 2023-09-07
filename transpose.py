@@ -20,6 +20,10 @@ def transposeTable(step):
 
 if __name__ == "__main__":
     
-    if len(sys.argv) == 1:
-        print("")
-    transposeTable(sys.argv[1])
+    if len(sys.argv) == 1 or sys.argv[1] == "-h" or sys.argv == "--help":
+        print(helpMessage)
+        exit(1)
+    elif isinstance(sys.argv[1], int):
+        transposeTable(sys.argv[1])
+
+        
