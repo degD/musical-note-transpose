@@ -7,8 +7,8 @@ def transposeTable(step):
     for i, note in enumerate(musicalNotes):
         noteUpper = note.upper()
         transposeIndex = (i + int(step)) % len(musicalNotes)
-        transposeNote = musicalNotes[transposeIndex]
-        print(f"{noteUpper} -> {transposeNote}")
+        transposeNoteUpper = musicalNotes[transposeIndex].upper()
+        print(f"{noteUpper.ljust(2)} -> {transposeNoteUpper}")
     
 
 if __name__ == "__main__":
