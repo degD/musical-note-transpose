@@ -23,11 +23,13 @@ if __name__ == "__main__":
     if len(sys.argv) == 1 or sys.argv[1] == "-h" or sys.argv == "--help":
         print(helpMessage)
         exit(1)
-    elif sys.argv[1].isnumeric():
+        
+    try: 
+        int(sys.argv[1])
         print(f"Transpose {sys.argv[1]} steps:")
         transposeTable(sys.argv[1])
         exit(0)
-    else:
+    except ValueError:
         print("Argument is not an integer. Skipping...")
         exit(1)
         
