@@ -25,5 +25,7 @@ if __name__ == "__main__":
         exit(1)
     elif sys.argv[1].isnumeric():
         transposeTable(sys.argv[1])
-
+    else:
+        print("Argument is not an integer. Skipping...")
+        exit(1)
         
