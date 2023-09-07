@@ -23,7 +23,7 @@ if __name__ == "__main__":
     if len(sys.argv) == 1 or sys.argv[1] == "-h" or sys.argv == "--help":
         print(helpMessage)
         exit(1)
-    elif isinstance(sys.argv[1], int):
+    elif sys.argv[1].isnumeric():
         transposeTable(sys.argv[1])
 
         
