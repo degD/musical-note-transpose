@@ -1,4 +1,5 @@
 
+
 import sys
 
 helpMessage = """
@@ -9,7 +10,7 @@ Have a nice day!
 
 
 def transposeTable(step):
-    
+    """Transpose notes by given number of half sounds."""
     musicalNotes = ["c", "c#", "d", "d#", "e", "f", "f#", "g", "g#", "a", "a#", "b"]
     for i, note in enumerate(musicalNotes):
         noteUpper = note.upper()
