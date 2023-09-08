@@ -9,6 +9,13 @@ Have a nice day!
 """
 
 
+def printMusicalNotes():
+    """Print list of notes"""
+    musicalNotes = ["c", "c#", "d", "d#", "e", "f", "f#", "g", "g#", "a", "a#", "b"]
+    for note in musicalNotes:
+        print(note.upper(), end=" ")
+    print()
+
 def transposeTable(step):
     """Transpose notes by given number of half sounds."""
     musicalNotes = ["c", "c#", "d", "d#", "e", "f", "f#", "g", "g#", "a", "a#", "b"]
