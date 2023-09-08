@@ -34,6 +34,7 @@ if __name__ == "__main__":
         
     try: 
         int(sys.argv[1])
+        printMusicalNotes()
         print(f"Transpose {sys.argv[1]} steps:")
         transposeTable(sys.argv[1])
         exit(0)
